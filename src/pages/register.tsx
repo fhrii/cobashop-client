@@ -65,7 +65,7 @@ const RegisterPage = () => {
       onCompleted: () => {
         router.replace('/');
       },
-      onError: () => {
+      onError: (e) => {
         setIsFetching(false);
         setIsFailed(true);
       },

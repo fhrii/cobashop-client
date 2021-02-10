@@ -27,14 +27,6 @@ export interface Me_me_transactions {
   success: boolean;
 }
 
-export interface Me_me_notifications {
-  __typename: "Notification";
-  id: string;
-  name: string;
-  description: string;
-  read: boolean;
-}
-
 export interface Me_me {
   __typename: "User";
   id: string;
@@ -43,7 +35,6 @@ export interface Me_me {
   image: string;
   blocked: boolean;
   transactions: Me_me_transactions[];
-  notifications: Me_me_notifications[];
 }
 
 export interface Me {

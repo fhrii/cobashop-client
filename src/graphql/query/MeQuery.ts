@@ -24,12 +24,6 @@ const MeQuery = gql`
         pending
         success
       }
-      notifications {
-        id
-        name
-        description
-        read
-      }
     }
   }
 `;

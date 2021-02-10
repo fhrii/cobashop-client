@@ -24,12 +24,6 @@ const RegisterMutation = gql`
         pending
         success
       }
-      notifications {
-        id
-        name
-        description
-        read
-      }
     }
   }
 `;

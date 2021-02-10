@@ -27,14 +27,6 @@ export interface Register_register_transactions {
   success: boolean;
 }
 
-export interface Register_register_notifications {
-  __typename: "Notification";
-  id: string;
-  name: string;
-  description: string;
-  read: boolean;
-}
-
 export interface Register_register {
   __typename: "User";
   id: string;
@@ -43,7 +35,6 @@ export interface Register_register {
   image: string;
   blocked: boolean;
   transactions: Register_register_transactions[];
-  notifications: Register_register_notifications[];
 }
 
 export interface Register {

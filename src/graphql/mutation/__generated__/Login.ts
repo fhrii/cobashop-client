@@ -27,14 +27,6 @@ export interface Login_login_transactions {
   success: boolean;
 }
 
-export interface Login_login_notifications {
-  __typename: "Notification";
-  id: string;
-  name: string;
-  description: string;
-  read: boolean;
-}
-
 export interface Login_login {
   __typename: "User";
   id: string;
@@ -43,7 +35,6 @@ export interface Login_login {
   image: string;
   blocked: boolean;
   transactions: Login_login_transactions[];
-  notifications: Login_login_notifications[];
 }
 
 export interface Login {
